@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Form</title>
+<link rel="stylesheet" href="../Design/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Contact us</h2>
+
+<form onsubmit="collectData(event)">
+
+<table>
+
+<tr>
+<td>FIRST NAME</td>
+<td>LAST NAME</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" id="fName">
+<p class="error"></p>
+</td>
+
+<td>
+<input type="text" id="lName">
+<p class="error"></p>
+</td>
+</tr>
+
+<tr>
+<td>EMAIL</td>
+<td>PHONE NUMBER</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" id="email">
+<p class="error"></p>
+</td>
+
+<td>
+<input type="text" id="phone">
+<p class="error"></p>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">WHAT DO YOU HAVE IN MIND</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<textarea id="message" rows="5" placeholder="Please enter query..."></textarea>
+<p class="error"></p>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="btn">
+<button type="submit">Submit</button>
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+<script src="../Javascript/script.js"></script>
+
+</body>
+</html>
