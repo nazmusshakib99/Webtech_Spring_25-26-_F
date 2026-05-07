@@ -3,6 +3,8 @@ session_start();
 
 $datafile = "data.json";
 
+
+
 function validateName($name) {
     if (empty($name)) {
         return "Name is required";
@@ -56,6 +58,7 @@ function validateCountry($country) {
 }
 
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = $_POST["name"];
@@ -63,6 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $gender = $_POST["gender"] ?? "";
     $country = $_POST["country"];
+
 
     $nameError = validateName($name);
     $passwordError = validatePassword($password);
@@ -84,6 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo "Login Successful <br>";
 
+
         $formdata = array(
             "name" => $name,
             "password" => $password,
@@ -91,6 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "gender" => $gender,
             "country" => $country
         );
+
 
         if (file_exists($datafile)) {
             $existingData = file_get_contents($datafile);
@@ -106,6 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    
         $jsondata = json_encode($tempData, JSON_PRETTY_PRINT);
+
 
         if (file_put_contents($datafile, $jsondata)) {
             echo "Data Saved Successfully <br>";
