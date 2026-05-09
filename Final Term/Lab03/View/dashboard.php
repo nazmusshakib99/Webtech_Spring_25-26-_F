@@ -2,6 +2,11 @@
 include "../Model/db.php";
 session_start();
 
+$_SESSION["filepath"] = "../File/Cs.jpg";
+
+$filepath = $_SESSION["filepath"];
+
+
 if(!isset($_SESSION["name"])){
 
 header ("Location:../Controller/logout.php");
@@ -50,6 +55,28 @@ while($row = $result->fetch_assoc())
 ?>
 
 </table>
+
+
+<?php
+
+if(!empty($filepath) && file_exists($filepath))
+{
+?>
+    <img src="<?php echo $filepath; ?>" height="200" width="200" alt="User Image">
+
+<?php
+}
+else
+{
+?>
+    <p>No image uploaded</p>
+
+<?php
+}
+?>
+
+</body>
+</html>
 
 </body>
 </html>

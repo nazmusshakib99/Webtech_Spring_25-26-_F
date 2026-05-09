@@ -24,7 +24,7 @@
     <td>
         <input type="submit" name="login" value="Login">
 
-        <a href="Registration.php">
+        <a href="registrationview.php">
             <button type="button">Signup</button>
         </a>
     </td>

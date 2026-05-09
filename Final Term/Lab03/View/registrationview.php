@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+      <head> <Script src ="../Controller/JS/Checkusername.js"> </Script></head>
 <body>
 
 <h1 style="color:blue;">Registration Page</h1>
@@ -10,7 +11,8 @@
 
 <tr>
     <td>Name:</td>
-    <td><input type="text" name="name"></td>
+    <td><input type="text" id="name" name="name" onkeyup=checkUser()></td>
+    <td> <p id="usernameresponse"></p></td>
 </tr>
 
 <tr>
