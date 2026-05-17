@@ -3,7 +3,8 @@
 <html>
 <head>
 <title>Login</title>
-<link rel="stylesheet" href="/update_project _Copy/View/Style/loginStyle.css">
+
+<link rel="stylesheet" href="/Webtech_Spring_25-26-_F/Webtech_Project/E-Commerce_Store_Management_System/View/Style/loginStyle.css">
 </head>
 
 <body>

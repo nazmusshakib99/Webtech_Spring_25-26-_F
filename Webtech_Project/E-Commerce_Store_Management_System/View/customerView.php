@@ -15,6 +15,8 @@ if(!isset($_SESSION['user_id'])){
 <title>Customer Dashboard</title>
 
 <link rel="stylesheet" href="/update_project _Copy/View/Style/homeStyle.css">
+<link rel="stylesheet" href="/Webtech_Spring_25-26-_F/Webtech_Project/E-Commerce_Store_Management_System/View/Style/homeStyle.css">
+
 
 </head>
 

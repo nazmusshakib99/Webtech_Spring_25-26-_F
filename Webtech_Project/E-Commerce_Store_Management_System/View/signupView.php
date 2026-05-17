@@ -16,7 +16,7 @@ unset($_SESSION['errors']);
 <head>
 
 <link rel="stylesheet" href="Style/SignupStyle.css">
-<script src="/update_project _Copy/Controller/JS/signupAjax.js"></script> 
+<script src="../Controller/JS/signupAjax.js"></script> 
 
 <title>Signup</title>
 
